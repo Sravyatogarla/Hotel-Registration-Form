@@ -4,8 +4,10 @@
 
 }
 body{
-    background: url(hotelroom/hotelroomimage.jpg);
+    background: url(hotelroomimage.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 div.main{
   
@@ -117,4 +119,23 @@ button{
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+}
+@media screen and (max-width: 768px) {
+    div.main {
+        grid-template-columns: 1fr; /* Full width on smaller screens */
+    }
+
+    div.register,
+    .submitted {
+        padding: 15px;
+    }
+
+    .submitted-booking-table th,
+    .submitted-booking-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+.main{
+    margin: 2%;
 }
